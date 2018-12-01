@@ -1,5 +1,7 @@
 # (Tiny) get
 
+[![Build Status](https://travis-ci.org/ItsJonQ/tiny-get.svg?branch=master)](https://travis-ci.org/ItsJonQ/tiny-get)
+
 > A tiny get function', similar to Lodash.get
 
 ## ✨ Features
