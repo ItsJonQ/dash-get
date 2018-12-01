@@ -24,13 +24,3 @@ function get(obj: Object, path?: Array<string> | string, fallback?: any): any {
 }
 
 export default get;
-
-function get(obj, path, fallback) {
-  if (!obj || !path) return fallback;
-  var paths = Array.isArray(path) ? path : path.split(".");
-  return paths.reduce(function(acc, path) {
-    if (acc === undefined) return fallback;
-    var value = acc[path];
-    return value !== undefined ? value : fallback;
-  }, obj);
-}
