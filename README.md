@@ -1,6 +1,6 @@
 # (Tiny) get
 
-[![Build Status](https://travis-ci.org/ItsJonQ/tiny-get.svg?branch=master)](https://travis-ci.org/ItsJonQ/tiny-get)
+[![Build Status](https://travis-ci.org/ItsJonQ/dash-get.svg?branch=master)](https://travis-ci.org/ItsJonQ/dash-get)
 
 > A tiny get function', similar to Lodash.get
 
@@ -13,18 +13,18 @@
 
 ## 🔧 Installation
 
-Add `tiny-get` to your project via `npm install`:
+Add `dash-get` to your project via `npm install`:
 
 ```
-npm install --save tiny-get
+npm install --save dash-get
 ```
 
 ## 🕹 Usage
 
-You can easily retrieve a value from a (deeply) nested object with `tiny-get`, like so:
+You can easily retrieve a value from a (deeply) nested object with `dash-get`, like so:
 
 ```js
-import get from 'tiny-get'
+import get from 'dash-get'
 
 const someObject = {...}
 

@@ -1,5 +1,5 @@
 {
-  "name": "tiny-get",
+  "name": "dash-get",
   "version": "1.0.0",
   "description": "A tiny get function, similar to Lodash.get",
   "main": "dist/index.js",
