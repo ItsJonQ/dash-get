@@ -1,6 +1,7 @@
 # (Tiny) get
 
 [![Build Status](https://travis-ci.org/ItsJonQ/dash-get.svg?branch=master)](https://travis-ci.org/ItsJonQ/dash-get)
+[![npm version](https://badge.fury.io/js/dash-get.svg)](https://badge.fury.io/js/dash-get)
 
 > A tiny get function', similar to Lodash.get
 
