@@ -27,8 +27,12 @@
   },
   "keywords": [
     "get",
+    "dash",
     "tiny",
-    "lodash"
+    "lodash",
+    "dash-get",
+    "object",
+    "value"
   ],
   "devDependencies": {
     "@types/jest": "23.3.10",
