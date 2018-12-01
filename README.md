@@ -10,7 +10,7 @@
 - **Zero dependencies**!
 - Super tiny, at ~350 bytes gzipped
 - Works just like [Lodash.get](https://lodash.com/docs/4.17.11#get)
-- Ultra speedy! Check out the [performance tests](https://codesandbox.io/s/48052km1q7)
+- Ultra speedy! Check out the [performance tests](https://jsperf.com/get-try-catch-vs-reduce-vs-lodash-get)
 
 ## 🔧 Installation
 
