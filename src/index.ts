@@ -15,12 +15,15 @@
 function get(obj: Object, path?: Array<string> | string, fallback?: any): any {
   if (!obj || !path) return fallback;
   const paths = Array.isArray(path) ? path : path.split(".");
+  let results = obj;
+  let i = 0;
 
-  return paths.reduce((acc, path) => {
-    if (acc === undefined) return fallback;
-    const value = acc[path];
-    return value !== undefined ? value : fallback;
-  }, obj);
+  while (i < paths.length && results !== undefined) {
+    results = results[paths[i]];
+    i++;
+  }
+
+  return results !== undefined ? results : fallback;
 }
 
 export default get;
