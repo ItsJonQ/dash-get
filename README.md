@@ -9,7 +9,7 @@
 
 - **Zero dependencies**!
 - Super tiny, at ~200 bytes gzipped
-- Works just like [Lodash.get](https://lodash.com/docs/4.17.11#get)
+- Works almost exactly like [Lodash.get](https://lodash.com/docs/4.17.11#get)
 - Ultra speedy! Check out the [performance tests](https://jsperf.com/get-try-catch-vs-reduce-vs-lodash-get)
 
 ## 🔧 Installation
@@ -50,7 +50,15 @@ const deeplyNestedValue = get(someObject, ['the', 'path', 'to', 'the', 'nested',
 | -------- | ------------------------ | --------------------------------------------------------------------- |
 | obj      | `Object`                 | The object to get the value from.                                     |
 | path     | `Array<string>`/`string` | The path to the value.                                                |
-| fallback | `any``                   | The fallback value, in case the desired value could not be retrieved. |
+| fallback | `any`                    | The fallback value, in case the desired value could not be retrieved. |
+
+## 👻 Unsupported feature
+
+This module does not support this particular use case:
+
+```
+get(object, 'a[0].b.c')
+```
 
 ## 🤔 Why an npm module tho?
 
