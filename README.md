@@ -50,7 +50,7 @@ const deeplyNestedValue = get(someObject, ['the', 'path', 'to', 'the', 'nested',
 | -------- | ------------------------ | --------------------------------------------------------------------- |
 | obj      | `Object`                 | The object to get the value from.                                     |
 | path     | `Array<string>`/`string` | The path to the value.                                                |
-| fallback | `any``                   | The fallback value, in case the desired value could not be retrieved. |
+| fallback | `any`                    | The fallback value, in case the desired value could not be retrieved. |
 
 ## 🤔 Why an npm module tho?
 
