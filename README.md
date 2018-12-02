@@ -71,12 +71,16 @@ Here it is!
 ```js
 function get(obj, path, fallback) {
   if (!obj || !path) return fallback;
-  var paths = Array.isArray(path) ? path : path.split(".");
-  return paths.reduce(function(acc, path) {
-    if (acc === undefined) return fallback;
-    var value = acc[path];
-    return value !== undefined ? value : fallback;
-  }, obj);
+  const paths = Array.isArray(path) ? path : path.split(".");
+  let results = obj;
+  let i = 0;
+
+  while (i < paths.length && results !== undefined) {
+    results = results[paths[i]];
+    i++;
+  }
+
+  return results !== undefined ? results : fallback;
 }
 ```
 
