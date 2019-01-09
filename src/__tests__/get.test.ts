@@ -56,6 +56,20 @@ test("Can retrieve a deeply nested null value", () => {
   expect(get(obj, "a.b.c.e", "fallback")).toBe("fallback");
 });
 
+test("Central null values trigger fallback", () => {
+  const obj = {
+    a: {
+      b: {
+        c: null
+      }
+    }
+  };
+
+  expect(get(obj, "a.b.c.d")).toBe(undefined);
+  expect(get(obj, "a.b.c.e")).toBe(undefined);
+  expect(get(obj, "a.b.c.e", "fallback")).toBe("fallback");
+});
+
 test("Can retrieve a deeply nested 0 value", () => {
   const obj = {
     a: {
