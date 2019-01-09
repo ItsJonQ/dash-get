@@ -75,12 +75,16 @@ function get(obj, path, fallback) {
   let results = obj;
   let i = 0;
 
-  while (i < paths.length && results !== undefined) {
+  while (i < paths.length && results !== undefined && results !== null) {
     results = results[paths[i]];
     i++;
   }
 
-  return results !== undefined ? results : fallback;
+  if (i === paths.length) {
+    return results !== undefined ? results : fallback;
+  }
+
+  return results !== undefined && results !== null ? results : fallback;
 }
 ```
 
